@@ -1,11 +1,13 @@
+import MainBody from './components/MainBody'
+import NavMenu from './components/NavMenu'
 import './css/App.css'
 
 function App() {
 
   return (
     <>
-      <h1>Karla Duran</h1>
-      <h2>Computer Engineer</h2>
+      <NavMenu/>
+      <MainBody/>
     </>
   )
 }
