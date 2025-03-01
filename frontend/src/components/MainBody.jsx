@@ -1,11 +1,28 @@
-import '../css/MainBody.css'
+import ExperienceBlock from "./ExperienceBlock"
+import HobbiesBlock from "./HobbiesBlock"
+import LanguagesBlock from "./LanguagesBlock"
+import ProjectsBlock from "./ProjectsBlock"
+import StackBlock from "./StackBlock"
+import Test from "./Test"
 
 const MainBody = () => {
   return (
-    <div className="mainBody p-8 flex flex-col justify-center items-center gap-4">
-      <h1 className="text-4x1 ">Karla Durán</h1>
-      <h2>Computer Engineer</h2>
-      <h2>Language Enthusiast</h2>
+    <div className="flex flex-col justify-center items-center gap-4 w-1/2">
+      <div className="flex flex-row gap-4 w-full p-8">
+        <div className="flex justify-center items-center w-1/3">
+          <h1 className="text-2xl">Karla Durán</h1>
+        </div>
+        <div className="flex flex-col  items-left text-lg w-2/3">
+          <h2>Computer Engineer</h2>
+          <h2>Language and Technology Enthusiast</h2> 
+        </div>
+      </div>
+      <StackBlock/>
+      <ProjectsBlock/>
+      <ExperienceBlock/>
+      <LanguagesBlock/>
+      <HobbiesBlock/>
+      <Test/>
     </div>
   )
 }
