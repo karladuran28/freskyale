@@ -1,11 +1,9 @@
 import { useEffect, useState } from 'react';
-import MainBody from './components/MainBody'
-import NavMenu from './components/NavMenu'
-import ParticlesComponent from './components/ParticlesComponent'
+import ParticlesComponent from './components/particles/ParticlesComponent'
 import { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from "@tsparticles/slim";
 import SpecialCharacter from './components/SpecialCharacter';
-import OptionalBody from './components/OptionalBody';
+import MainBody from './components/MainBody';
 
 function App() {
 
@@ -26,10 +24,7 @@ function App() {
   return (
     <div className='flex flex-col items-center'>
       <ParticlesComponent init={init}/>
-      {/* <NavMenu/>
-      <MainBody/> */}
-      <OptionalBody/>
-
+      <MainBody/>
       {/* <SpecialCharacter/> */}
     </div>
   )
