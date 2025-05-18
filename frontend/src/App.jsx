@@ -11,6 +11,10 @@ function App() {
 
   // this should be run only once per application lifetime
   useEffect(() => {
+
+    console.log("%cThanks for visiting!", "color: #ff8aaacb; font-size: 16px; font-weight: bold;")
+    console.log("%cFollow me on Linkedin: karladuran28", "color:rgb(238, 126, 255); font-size: 16px; font-weight: bold;")
+
     initParticlesEngine(async (engine) => {
       // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
       // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
